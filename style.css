@@ -1,0 +1,10 @@
+* {
+    background-color: salmon;
+}
+H1 {
+    text-align: left;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
