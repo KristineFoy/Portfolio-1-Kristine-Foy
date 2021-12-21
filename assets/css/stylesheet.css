@@ -1,10 +1,109 @@
 body {
-    background-color: salmon;
+    margin: 25px;
+    background: rgb(187, 234, 253);
+    display: flex auto;
 }
+
 H1 {
+    display: flex auto;
     text-align: left;
-    color: white;
-    font-size: large;
+    color: rgb(96, 198, 221);
+    font-size: 35px;
     font-weight: bold;
-    font-family: 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: gray;
+}
+
+li {
+    display: flex inline-table;
+    list-style-position:inline-block;
+    list-style-type: none;
+    justify-content:flex-end;
+    color: rgb(69, 181,189);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration-line: underline;
+    text-align: right;
+    
+}
+
+H2 {
+    text-align: right;
+    color: rgb(55, 34, 238);
+    font-size: 30px;
+    background-color: rgb(228, 168, 147);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+
+}
+ 
+sub {
+    color: rgb(49, 48, 48);
+    background-color: rgb(228, 168, 147);
+    text-align:right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+#about-me {
+    margin-left: 50%;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    text-align:inherit right;
+    text-orientation: inherit;
+    font-weight: normal;
+    line-height: 2;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right, auto;
+    height: 200px;
+    border: 5px solid teal auto;
+    border-width: 2px;
+    margin-left: 50%;
+
+}
+
+
+
+.img1 {
+    display: flex;
+    flex:auto;
+    width: 10px;
+    height: 40px;
+    background-color: lightblue;
+    margin: 25px;
+    padding: 10px;
+    border: 10px solid darkblue;
+    
+}
+
+.img2 {
+    width: 25%;
+    height: 25px;
+    position: relative right;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    margin: 10px;
+    margin-left: 50% auto;
+    padding: 10px;
+    border: 10px solid darkblue;
+    
+}
+
+.card {
+    display: flex;
+    width: 25%;
+
+}
+
+footer {
+    display: inline-table;
+    text-align:right;
+    justify-content: inline-block;
 }
