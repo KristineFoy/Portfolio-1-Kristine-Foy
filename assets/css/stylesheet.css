@@ -1,9 +1,10 @@
+/* Whole body of page display */
 body {
     margin: 25px;
-    background: rgb(187, 234, 253);
+    background: rgb(231, 248, 255);
     display: flex auto;
 }
-
+/* color of H1 text,background color and font info */
 H1 {
     display: flex auto;
     text-align: left;
@@ -11,9 +12,14 @@ H1 {
     font-size: 35px;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    background-color: gray;
+    background-color: rgb(240, 240, 240);
 }
 
+    /* Nav bar set to display inline */
+nav {
+    display: inline;
+}
+/* list iteams display and font color */
 li {
     display: flex inline-table;
     list-style-position:inline-block;
@@ -27,17 +33,17 @@ li {
     text-align: right;
     
 }
-
+/* H2 font color and background */
 H2 {
     text-align: right;
-    color: rgb(55, 34, 238);
+    color: rgb(132, 197, 223);
     font-size: 30px;
-    background-color: rgb(228, 168, 147);
+    background-color: rgb(253, 208, 124);
     font-weight: bold;
     font-family: Arial, sans-serif;
 
 }
- 
+ /* Sub header font color and background color */
 sub {
     color: rgb(49, 48, 48);
     background-color: rgb(228, 168, 147);
@@ -47,17 +53,18 @@ sub {
     font-weight: bold;
 
 }
-
+/* font size for About Me section */
 #about-me {
     margin-left: 50%;
     font-family: Arial, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
     text-align:inherit right;
     text-orientation: inherit;
     font-weight: normal;
     line-height: 2;
 }
 
+/*sets size for screenshot image in middle of page  */
 #work {
     display: flex;
     flex-wrap: wrap;
@@ -69,41 +76,66 @@ sub {
 
 }
 
-
-
+/* sets size for screenshot image in middle of page */
 .img1 {
     display: flex;
     flex:auto;
-    width: 10px;
-    height: 40px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 10px;
+    border: 10px solid darkblue;
+    
+}
+
+/* defines box size for placeholder images */
+#box {
+    display: flex;
+    flex: auto;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
     background-color: lightblue;
     margin: 25px;
     padding: 10px;
     border: 10px solid darkblue;
-    
-}
-
-.img2 {
-    width: 25%;
-    height: 25px;
-    position: relative right;
-    flex-wrap: wrap;
-    background-color: lightblue;
-    margin: 10px;
+    flex-flow: row, wrap, auto;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 50% auto;
-    padding: 10px;
-    border: 10px solid darkblue;
-    
+    position: center;
+
 }
 
-.card {
+/* defines box  bordersfor  placeholder images  */
+.contaniner {
+    min-height: 5px;
+    width: 5px;
+    flex: 25%;
     display: flex;
+    flex-flow:row wrap auto;
+    justify-content: center;
+    align-items: center;
+    background: cornflowerblue;
+    border: crimson solid 15px;
+}
+
+/* sets display size for placeholder imges and mark postion*/
+.card {
+    display: flex row;
     width: 25%;
 
 }
 
+/* text align and inline for footer */
 footer {
-    display: inline-table;
-    text-align:right;
+    display: flex;
+    text-align: right;
     justify-content: inline-block;
 }
+/* screen resize for mobile */
+
+@media screen and (min-width:992px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (max-width: 576px){}
